@@ -43,33 +43,21 @@ include "koneksi.php";
 	</div>
 
 	<div id="colTwo">
-		<h2>Black Forres</h2>
-
-		<p><img src="https://amaliayunus.files.wordpress.com/2015/01/eggless-black-forest-cake-1.png?w=509&h=609" alt="" width="130" height="110" class="img1" /></p>
 		<h2>List Resep Black Forest</h2>
 
 
+        
+        <table border="0" cellpadding="10" cellspacing="0" style="font-family:arial;">
         <?php
             $sql = "select * from resep";
-            $query = mysql_query($sql);
-            while($b = mysql_fetch_array($query)){
-                $id[] = $b['id'];
-                $nama[] = $b['nama'];
-                $resep[] = $b['resep'];
-                $foto[] = $b['foto'];
-            }
-
-            $jumlah = count($id);
-            $baris = floor($jumlah/3);
-            if(($jumlah%3) > 0){
-                $baris = $baris + 1;
-            }
+            $query = mysqli_query($konek,$sql);
+            while($b = mysqli_fetch_array($query)){ 
         ?>
-        <table border="0" cellpadding="10" cellspacing="0" style="font-family:arial;">
             <tr>
-                <td><?php echo $foto[$k] ?></td>
-                <td><?php echo $nama[$k] ?></td>
+                <td><?php echo $b['nama'] ?></td>
+                <td><?php echo $b['resep'] ?></td>
             </tr>
+            <?php } ?>
             <tr>
                 <td  colspan="2" valign=bottom>
                 <a href="keterangank.php?id=<?php echo $id[$k]?>" >See More</a></td>
