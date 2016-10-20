@@ -27,7 +27,7 @@ include "koneksi.php";
 				<li id="menu-01"><a href="index.html">Home</a></li>
 				<li id="menu-02"><a href="sejarah.html">Sejarah</a></li>
 				<li id="menu-03"><a href="cara_membuat.html">Cara Membuat Makanan</a></li>
-				<li id="menu-04"><a href="galery.html">Galari Makanan</a></li>
+				<li id="menu-04"><a href="galery.html">Galeri Makanan</a></li>
 				<li id="menu-04"><a href="dampak.html">Efek Baik dan Buruk</a></li>
 				<li id="menu-04"><a href="fakta_kue.html">Fakta Kue</a></li>
 				<li id="menu-04"><a href="perbandingan kandungan.html">Perbandingan Kandungan</a></li>
