@@ -38,28 +38,40 @@ Released for free under a Creative Commons Attribution 2.5 License
 		<h2>Black Forres</h2>
 
 		<p><img src="https://amaliayunus.files.wordpress.com/2015/01/eggless-black-forest-cake-1.png?w=509&h=609" alt="" width="130" height="110" class="img1" /></p>
-		<h2>CARA MEMEMAKAN KUE BLACK FOREST</h2>
+		<h2>List Resep Black Forest</h2>
 
+        
+        <?php 
+            $sql = "select * from resep";
+            $query = mysql_query($sql);
+            while($b = mysql_fetch_array($query)){
+                $id[] = $b['id'];
+                $nama[] = $b['nama'];
+                $resep[] = $b['resep'];
+                $foto[] = $b['foto'];
+            }
 
-<p>Ini adalah Black Forest tanpa telur pertama yang pernah saya buat. Kenapa tanpa telur? Alasannya tidak lain karena Aliya, yang masih ASI, ternyata alergi terhadap telur dan udang. Setiap kali saya
-mengkonsumsi kedua jenis makanan tersebut dan produk olahannya, wajah Aliya langsung merah-merah dan muncul bintik-bintik kecil seperti biang keringat. Setelah cek ke dokter, ternyata dia alergi. Akhirnya saya harus stop dulu makan udang dan telur. Sedihnya, padahal doyan hehehhe. Mudah-mudahan alerginya hanya sementara dan tidak menetap. Amin.</p>
-</br>
-
-<img src="https://defaultcustomheadersdata.files.wordpress.com/2016/07/food.jpg?resize=937,300" width="430" height="150"/>
-<p>Namanya manusia, makin dilarang, makin pengen. Ketika dikatakan dokter agar saya tidak mengkonsumsi telur, yang ingin saya makan justru telur. Masalah utamanya adalah saya suka dengan cake yang mayoritas menggunakan telur. Susah sekali menemukan resep cake yang enak namun tanpa telur.</p>
-
-<p>Setelah mencari kesana kemari, mengobrak-abrik kumpulan resep dan buku masakan, search via Mbah Google, bereksperimen dengan berbagai resep online, akhirnya saya menemukan satu cake coklat dasar yang tidak menggunakan telur namun cocok dengan selera saya. Saya mencoba membuat resep Glass Chocolate Cake dari Yeni Ismayani dari Buku Cake & Cookies: Tanpa Telur (penerbit PT Gramedia Pustaka Utama).</p>
-
-<p>cara memakan blackforest yaitu :</p>
-<ul>
-	<li type="circle">sajikan kue yang sudah jadi ke atas piring</li>
-	<li type="circle">potong kue sesuai selera</li>
-	<li type="circle">makan kue pelan-pelan dengan penuh nikmat</li>
-	<li type="circle">hahaha XD</li>
-
-</ul>
-
-
+            $jumlah = count($id);
+            $baris = floor($jumlah/3);
+            if(($jumlah%3) > 0){
+                $baris = $baris + 1;
+            }
+        ?>
+        <table border="0" cellpadding="10" cellspacing="0" style="font-family:arial;">
+            <tr>
+                <td><?php echo $foto[$k] ?></td>
+                <td><?php echo $nama[$k] ?></td>
+            </tr>
+            <tr>
+                <td  colspan="2" valign=bottom>
+                <a href="./user/beli.php?id_motor=<?php echo $id_motor[$k]?>" class=beli><img src="./image/buy.jpg"></img></a>
+                <a href="motor/keterangank.php?id_motor=<?php echo $id_motor[$k]?>" class=beli><img src="./image/view_button.jpg"></img></a></td>
+            </tr>
+        </table>
+            		
+                
+                
+                
 		</div>
 	<div style="clear: both;">&nbsp;</div>
 </div>
