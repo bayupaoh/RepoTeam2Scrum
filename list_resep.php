@@ -4,7 +4,7 @@ Design by Free CSS Templates
 http://www.freecsstemplates.org
 Released for free under a Creative Commons Attribution 2.5 License
 -->
-<?php 
+<?php
 include "koneksi.php";
 ?>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -32,6 +32,11 @@ include "koneksi.php";
 				<li id="menu-04"><a href="fakta_kue.html">Fakta Kue</a></li>
 				<li id="menu-04"><a href="perbandingan kandungan.html">Perbandingan Kandungan</a></li>
 				<li id="menu-04"><a href="cara_makan.html">Cara Makann</a></li>
+				<li id="menu-04"><a href="video.html">Video Kreasi</a></li>
+				<li id="menu-04"><a href="ulasan.html">Video Ulasan</a></li>
+			  <li id="menu-04"><a href="kirim_resep.php">Kirim Resep</a></li>
+				<li id="menu-04"><a href="liat_resep.php">Lihat Kiriman Resep</a></li>
+				<li id="menu-05"><a href="about_us.html">About Developer</a></li>
 			</ul>
 		</div>
 
@@ -43,8 +48,8 @@ include "koneksi.php";
 		<p><img src="https://amaliayunus.files.wordpress.com/2015/01/eggless-black-forest-cake-1.png?w=509&h=609" alt="" width="130" height="110" class="img1" /></p>
 		<h2>List Resep Black Forest</h2>
 
-        
-        <?php 
+
+        <?php
             $sql = "select * from resep";
             $query = mysql_query($sql);
             while($b = mysql_fetch_array($query)){
@@ -70,10 +75,10 @@ include "koneksi.php";
                 <a href="keterangank.php?id=<?php echo $id[$k]?>" >See More</a></td>
             </tr>
         </table>
-            		
-                
-                
-                
+
+
+
+
 		</div>
 	<div style="clear: both;">&nbsp;</div>
 </div>
