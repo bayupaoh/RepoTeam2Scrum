@@ -54,14 +54,13 @@ include "koneksi.php";
             while($b = mysqli_fetch_array($query)){ 
         ?>
             <tr>
-                <td><?php echo $b['nama'] ?></td>
-                <td><?php echo $b['resep'] ?></td>
+               <td><img src="images/<?php echo $b['foto'] ?>" alt="" width="130" height="110" class="img1" /></td> <td><?php echo $b['nama'] ?></td>
+            </tr>
+            <tr>    
+                <td>Resep</td><td><?php echo $b['resep'] ?></td>
             </tr>
             <?php } ?>
-            <tr>
-                <td  colspan="2" valign=bottom>
-                <a href="keterangank.php?id=<?php echo $id[$k]?>" >See More</a></td>
-            </tr>
+           
         </table>
 
 
