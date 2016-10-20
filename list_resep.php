@@ -17,6 +17,7 @@ include "koneksi.php";
 </head>
 <body>
 <div id="header">
+<img src="images/logo.png" alt="" width="130" height="110" class="img1" />
 	<h1>Black Forres</h1>
 </div>
 <div id="content">
@@ -36,6 +37,7 @@ include "koneksi.php";
 				<li id="menu-04"><a href="ulasan.html">Video Ulasan</a></li>
 			  <li id="menu-04"><a href="kirim_resep.php">Kirim Resep</a></li>
 				<li id="menu-04"><a href="list_resep.php">Lihat Kiriman Resep</a></li>
+												<li id="menu-04"><a href="cara_menemukan.html">Cara Menemukan</a></li>
 				<li id="menu-05"><a href="about_us.html">About Developer</a></li>
 			</ul>
 		</div>
