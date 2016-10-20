@@ -36,45 +36,35 @@ Released for free under a Creative Commons Attribution 2.5 License
 	</div>
 
 	<div id="colTwo">
-		<h2>Black Forres</h2>
+		<h2>Kirim Rseep</h2>
+		<form action="kirim.php" method="post" enctype="multipart/form-data">
+			<table>
+				<tr>
+					<td>Nama Resep</td>
+					<td><input type="text" name="nama"></td>
+				</tr>
+				<tr>
+					<td>Resep</td>
+					<td><textarea name="resep"></textarea></td>
+				</tr>
+				<tr>
+					<td>foto kue</td>
+					<td><input type="file" name="foto"></td>
+				</tr>
+				<tr>
+					<td colspan="2"><input type="submit" name="kirim" value="KIRIM"></td>
+				</tr>
+			</table>
+		</form>
 
-		<p><img src="https://cincinletseat.files.wordpress.com/2011/11/6293769064_e64db5bbae_o.jpg" alt="" width="130" height="110" class="img1" />
-		</p>
-		<p>
-			Kue Black Forest (Bahasa Jerman: Schwarzwälder Kirschtorte) adalah jenis kue khas Jerman yang paling dikenal di dunia.
-			 <br>Kue ini terbuat dari bolu coklat yang dilapisi krim segar, serutan coklat dan ceri yang direndam dalam <br>Kirschwasser, schnapps ceri jernih khas daerah Schwarzwälder ("Black Forest").
-
-		</p>
-		<p><img src="https://i.ytimg.com/vi/gCfhNGI4pRo/maxresdefault.jpg" alt="" width="130" height="110" class="img1" />
-		</p>
-		<p>
-			Black forest yang yummy saat di padukan dengan cherry yang segar dan mantap untuk disantap uhuy...
-
-		</p>
-		<p><br><br><br><br><br></p>
-		<p><img src="http://www.taste.com.au/images/recipes/tm/2013/09/cherry-ripple-black-forest-cake-26862_l.jpeg" alt="" width="130" height="110" class="img1" />
-		</p>
-		<p>
-			Black forest sangat lezat saat di padu dengan cokelat crispy serta krim coklat yang meleleh sangat bagus buat desert
-
-		</p>
-		<p><br><br><br><br><br></p>
-		<p><img src="https://i.ytimg.com/vi/8vJ6yUVnBWA/maxresdefault.jpg" alt="" width="130" height="110" class="img1" />
-		</p>
-		<p>
-			Black forest dengan butiran coklat sangat yummy
-
-		</p>
+		
 
 	</div>
 	<div style="clear: both;">&nbsp;</div>
 </div>
 <div id="footer">
-<<<<<<< HEAD
 	<p>Copyright by Black Forrees - 2016</a></p>
-=======
-	<h3>Black Forrees by Team 2016</h3>
->>>>>>> 73f657cbb1a18dd388e4fd64254cbab9fa977836
+
 </div>
 </body>
 </html>
