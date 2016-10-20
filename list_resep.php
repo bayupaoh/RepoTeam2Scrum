@@ -4,6 +4,9 @@ Design by Free CSS Templates
 http://www.freecsstemplates.org
 Released for free under a Creative Commons Attribution 2.5 License
 -->
+<?php 
+include "koneksi.php";
+?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -64,8 +67,7 @@ Released for free under a Creative Commons Attribution 2.5 License
             </tr>
             <tr>
                 <td  colspan="2" valign=bottom>
-                <a href="./user/beli.php?id_motor=<?php echo $id_motor[$k]?>" class=beli><img src="./image/buy.jpg"></img></a>
-                <a href="motor/keterangank.php?id_motor=<?php echo $id_motor[$k]?>" class=beli><img src="./image/view_button.jpg"></img></a></td>
+                <a href="keterangank.php?id=<?php echo $id[$k]?>" >See More</a></td>
             </tr>
         </table>
             		
